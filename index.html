@@ -1,0 +1,1004 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Email Templates</title>
+
+		<meta name="description" content="Environment - EPAM front-end lectures">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/epam.css">
+		<link rel="stylesheet" href="css/my.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Email templates</h1>
+				</section>
+                <section>
+                    <section>
+                        <h2>Agenda</h2>
+                        <div>
+                            <ul class="style-list fragment grow">
+                                <li>Email template basics</li>
+                            </ul>
+                            <ul class="style-list fragment grow">
+                                <li>Email template for mobile</li>
+                            </ul>
+                            <ul class="style-list fragment grow">
+                                <li>Responsive emails</li>
+                            </ul>
+                            <ul class="style-list fragment grow">
+                                <li>Email marketing services</li>
+                            </ul>
+                        </div>
+                    </section>
+                </section>
+				<section>
+                    <section>
+                        <h2>Email template</h2>
+                        <p>is the use of a subset of HTML to provide formatting and semantic markup capabilities in email that are not available with plain text <span class="sub-text alignright"><a href="https://en.wikipedia.org/wiki/HTML_email">&copy;Wikipedia</a></span></p>
+                    </section>
+                    <section>
+                        <h2>Email template</h2>
+                        <p>HTML-page template, which is used for sending via email</p>
+                    </section>  
+				</section>
+				<section>
+					<h2>Mail clients</h2>
+					<div>
+                        <div class="col three-col">
+                            <h3>Browser</h3>               
+                            <ul class="style-list-01 fragment">
+                                <li>Outlook.com</li>
+                                <li>Yahoo!</li>
+                                <li>Gmail</li>
+                                <li>AOL</li>
+                            </ul>
+                        </div>
+                        <div class="col three-col">
+                            <h3>Desktop</h3>
+                            <ul class="style-list-01 fragment">
+                                <li>Outlook 2007 - 2013</li>
+                                <li>Outlook 2000 - 2003</li>
+                                <li>Apple Mail</li>
+                                <li>Windows Live Mail</li>
+                                <li>Outlook For Mac</li>
+                            </ul>
+                        </div>
+                        <div class="col three-col">
+                            <h3>Mobile</h3>
+                            <ul class="style-list-01 fragment">
+                                <li>iOS 9</li>
+                                <li>Android 4.2</li>
+                                <li>Android 2.3</li>
+                                <li>Gmail App</li>
+                            </ul>
+                        </div>
+                    </div>
+				</section>
+				<section>
+					<h2>restrictions</h2>
+                    <ul class="style-list">
+                        <li>No :hover, :active, :focus</li>
+                        <li>Limited CSS3</li>
+                        <li>No JS</li>
+                        <li>No forms</li>
+                        <li>Backgrounds</li>
+                        <li>Non-web fonts</li>
+                        <li>Global styles</li>
+                        <li>No div-layout!</li>
+                        <li><a href="http://templates.mailchimp.com/resources/email-client-css-support/">Email client CSS support</a></li>
+                    </ul>
+				</section>
+				<section>
+                    <h2>what remains</h2>
+                    <ul class="style-list">
+                        <li>Table-layout</li>
+                        <li>Universally supported CSS-properties</li>
+                        <li>Attributes</li>
+                        <li>Inline styles</li>
+                    </ul>
+                </section>
+                <section>
+                    <section>
+                        <h2>tables</h2>
+                    </section>
+                    <section>
+                    <h4>table structure</h4>
+<pre><code class="hljs css"><table>
+    <tbody>
+        <tr>
+            <td>
+                Lorem ipsum
+            </td>
+            <td>
+                Lorem ipsum
+            </td>
+            <td>
+                Lorem ipsum
+            </td>
+        </tr>
+    </tbody>
+</table>
+</code></pre>
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Lorem ipsum
+            </td>
+            <td>
+                Lorem ipsum
+            </td>
+            <td>
+                Lorem ipsum
+            </td>
+        </tr>
+    </tbody>
+</table>
+                    </section>
+                    <section>
+                        <h4>&lt;<span>td</span>&gt; - nowrap</h4>
+<pre><code class="hljs css"><table>
+    <tbody>
+        <tr>
+            <td>
+                Lorem ipsum
+            </td>
+            <td>
+                Lorem ipsum
+            </td>
+            <td>
+                Lorem ipsum
+            </td>
+            <td>
+                Lorem ipsum
+            </td>
+            <td>
+                Lorem ipsum
+            </td>
+            <td>
+                Lorem ipsum
+            </td>
+        </tr>
+    </tbody>
+</table>
+</code></pre>
+<table>
+    <tbody>
+        <tr>
+            <td>
+                Lorem ipsum
+            </td>
+            <td>
+                Lorem ipsum
+            </td>
+            <td>
+                Lorem ipsum
+            </td>
+            <td>
+                Lorem ipsum
+            </td>
+            <td>
+                Lorem ipsum
+            </td>
+            <td>
+                Lorem ipsum
+            </td>
+        </tr>
+    </tbody>
+</table>
+                    </section>
+                    <section>
+                        <h4>Σ&lt;<span>td</span>&gt; = &lt;<span>table</span>&gt;</h4>
+<pre><code class="hljs css"><table>
+    <tbody>
+        <tr>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <tbody>
+        <tr>
+            <td>Lorem ipsum</td>
+        </tr>
+    </tbody>
+</table>
+</code></pre>    
+<table class="has-bg">
+    <tbody>
+        <tr>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+        </tr>
+    </tbody>
+</table>
+<table class="has-bg">
+    <tbody>
+        <tr>
+            <td>Lorem ipsum</td>
+        </tr>
+    </tbody>
+</table>
+
+                    </section>
+                    <section>
+                        <h4>Set width</h4>
+<pre><code class="hljs css"><table style="width: 100px;">
+    <tbody>
+        <tr>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+        </tr>
+    </tbody>
+</table>
+
+<table style="width: 100px;">
+    <tbody>
+        <tr>
+            <td>Lorem ipsum</td>
+        </tr>
+    </tbody>
+</table>
+</code></pre>
+                <table class="has-bg" style="width: 100px;">
+    <tbody>
+        <tr>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+        </tr>
+    </tbody>
+</table>
+<table class="has-bg" style="width: 100px;">
+    <tbody>
+        <tr>
+            <td>Lorem ipsum</td>
+        </tr>
+    </tbody>
+</table>
+                    </section>
+                    <section>
+                        <h4>Equal &lt;<span>td</span>&gt; height</h4>
+<pre><code class="hljs css"><table>
+    <tbody>
+        <tr>
+            <td>
+                Lorem ipsum
+            </td>
+            <td>
+                Lorem ipsum
+            </td>
+            <td>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+                 recusandae voluptate nihil iure libero quod modi cum iusto
+                 architecto eligendi quibusdam, dolorem amet ut placeat fuga,
+                  eum aut, provident nostrum.
+            </td>
+        </tr>
+    </tbody>
+</table>
+</code></pre>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Lorem ipsum
+                                    </td>
+                                    <td>
+                                        Lorem ipsum
+                                    </td>
+                                    <td>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores recusandae voluptate nihil iure libero quod modi cum iusto architecto eligendi quibusdam, dolorem amet ut placeat fuga, eum aut, provident nostrum.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h4>Each &lt;<span>td</span>&gt; could have ∞ numbers of tables</h4>
+<pre><code class="hljs css"><table><tbody>
+    <tr>
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Lorem ipsum</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Lorem ipsum</td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td>Lorem ipsum</td>
+        <td>Lorem ipsum</td>
+    </tr>
+</tbody></table>
+</code></pre>
+                    <table>
+    <tbody>
+        <tr>
+            <td>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                Lorem ipsum
+            </td>
+            <td>
+                Lorem ipsum
+            </td>
+        </tr>
+    </tbody>
+</table>
+                    </section>
+                <section>
+                    <h4>Sum of &lt;<span>td</span>&gt; in each &lt;<span>tr</span>&gt; should be equal</h4>
+                    <div>
+                        <div class="col two-col">
+                        <h4><span>colspan</span></h4>
+<pre><code class="hljs css"><table>
+<tbody>
+    <tr>
+        <td>Lorem ipsum</td>
+        <td>Lorem ipsum</td>
+        <td>Lorem ipsum</td>
+    </tr>
+    <tr>
+        <td>Lorem ipsum</td>
+        <td colspan="2">Lorem ipsum</td>
+    </tr>
+</tbody>
+</table>
+</code></pre>
+<table>
+    <tbody>
+        <tr>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+        </tr>
+        <tr>
+            <td>Lorem ipsum</td>
+            <td colspan="2">Lorem ipsum</td>
+        </tr>
+    </tbody>
+</table>
+                        </div>
+                        <div class="col two-col">
+                        <h4><span>rowspan</span></h4>
+<pre><code class="hljs css"><table>
+<tbody>
+    <tr>
+        <td rowspan="2">Lorem ipsum</td>
+        <td>Lorem ipsum</td>
+        <td>Lorem ipsum</td>
+    </tr>
+    <tr>
+        <td>Lorem ipsum</td>
+        <td>Lorem ipsum</td>
+    </tr>
+</tbody>
+</table>
+</code></pre>
+<table>
+    <tbody>
+    <tr>
+        <td rowspan="2">Lorem ipsum</td>
+        <td>Lorem ipsum</td>
+        <td>Lorem ipsum</td>
+    </tr>
+    <tr>
+        <td>Lorem ipsum</td>
+        <td>Lorem ipsum</td>
+    </tr>
+</tbody>
+</table>
+                        </div>
+                    </div>
+                </section>
+                </section>
+
+                <section>
+                    <h3>Universally supported CSS-properties</h3>
+                    <img src="img/img01.png" alt="">
+                </section>
+
+                <section>
+                    <h3>Attributes</h3>
+                    <img src="img/img02.png" alt="">
+                </section>
+
+                <section>
+                    <h3>Inline styles</h3>    
+                    <p>Use inline styles in most cases</p>
+                    <p>or</p>
+                    <a href="http://premailer.dialect.ca/">Use inline generator</a>
+                </section>
+
+                <section>
+                	<h2>Fixed email template</h2>
+                    <pre><code class="hljs css"><table width="100%" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+    <tbody>
+        <tr>
+            <td>
+                <table width="600" align="center" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td>CONTENT</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</code></pre>
+                </section>
+                <section class="top-style">
+                    <h2>Email reset</h2>
+                    <pre class="style"><code class="hljs css"><style type="text/css">
+    /* Outlook 2007 / 2010 / 2013 */
+    #outlook a {padding:0;}
+
+    /* Outlook.com / Hotmail reset */
+    .ExternalClass,
+    .ReadMsgBody {width:100% !important;}
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {line-height:100%;}
+
+    body {
+            width:100% !important;
+            margin:0;
+            padding:0;
+    }
+    p {margin:0 !important;}
+    img {
+            outline:none;
+            text-decoration:none;
+            -ms-interpolation-mode:bicubic; /* image resize in Outlook */
+    }
+    a img {border:0;}
+    a{
+            color:#000;
+            text-decoration:none;
+    }
+    a:hover {text-decoration:none !important;}
+
+    /* YAHOO a reset */
+    .yshortcuts,
+    .yshortcuts a,
+    .yshortcuts a:link,
+    .yshortcuts a:visited,
+    .yshortcuts a:hover,
+    .yshortcuts a span {
+            color:#000;
+            text-decoration:none !important;
+            border-bottom:none !important;
+            background:none !important;
+    }
+
+    table,
+    tr,
+    td {
+            border-collapse:collapse;
+            mso-table-lspace:0pt; /* table element spacing in Outlook */
+            mso-table-rspace:0pt;
+    }
+</style>
+</code></pre>
+<p><a href="http://templates.mailchimp.com/development/css/client-specific-styles/">More info see here</a></p>
+                </section>
+                <section>
+					<h3>Vertical/horizontal align</h3>
+                    <pre><code class="hljs css"><table width="100%" cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr>
+            <td align="center">Lorem ipsum</td>
+        </tr>
+    </tbody>
+</table>
+</code></pre>
+<pre><code class="hljs css"><table width="100%" cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr>
+            <td align="center" valign="bottom">Lorem ipsum</td>
+        </tr>
+    </tbody>
+</table>
+</code></pre>
+				</section>
+
+				<section>
+					<h3>Fonts styles</h3>
+<pre><code class="hljs css"><table width="100%" cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr>
+            <td style="font:12px/15px Arial, Helvetica, sans-serif;">Lorem</td>
+            <td> 
+                <a style="text-decoration:none; color:#000;" href="#">Link</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</code></pre>
+				</section>
+
+                <section class="top-style">
+                	<h3>Images</h3>
+                    <div>
+                        <pre class="style"><code class="hljs css"><table width="100%" cellpadding="0" cellspacing="0">
+<tbody>
+    <!-- if image height less than 20px -->
+    <tr>
+        <td style="line-height:0;">
+            <img src="img.gif" align="left" vspace="0" hspace="0" width="" height="10" alt="" />
+        </td>
+    </tr>
+</tbody>
+</table>
+</code></pre>  
+                    </div>
+                    <div class="fragment">
+                        <pre class="style"><code class="hljs css"><table width="100%" cellpadding="0" cellspacing="0">
+<tbody>
+    <!-- if image height is 20px and more -->
+    <tr>
+        <td>
+            <img src="img.gif" style="vertical-align:top;" width="" height="37" alt="" />
+        </td>
+    </tr>
+</tbody>
+</table>
+</code></pre>  
+                    </div>
+                    <div class="fragment">
+                        <pre class="style"><code class="hljs css"><table width="100%" cellpadding="0" cellspacing="0">
+<tbody>
+    <!-- if image has a tag -->
+    <tr>
+        <td style="line-height:0;">
+            <a href="#"><img src="img.gif" alt="Ad" width="30" height="35" border="0" align="left" /></a>
+        </td>
+    </tr>
+</tbody>
+</table>
+</code></pre>  
+                    </div>
+                    <div class="fragment">
+                        <pre class="style"><code class="hljs css"><table width="100%" cellpadding="0" cellspacing="0">
+<tbody>
+    <!-- img center -->
+    <tr>
+        <td align="center"><img src="img.gif" style="vertical-align:top;" width="" height="" alt="" /></td>
+    </tr>
+</tbody>
+</table>
+</code></pre>  
+                    </div>
+                </section>
+
+                <section>
+                	<h3>Margin, borders</h3>
+                    <p>Use paddings on &lt;<span>td</span>&gt; for indent betven blocks</p>
+<pre class="style"><code class="hljs css"><table width="100%" cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr>
+            <td style="border:2px solid #000000; padding:5px;" bgcolor="#ffffff">
+                Lorem ipsum
+            </td>
+        </tr>
+    </tbody>
+</table>
+</code></pre>
+                <p>Use &lt;br&gt; on for indent in text</p>
+<pre class="style"><code class="hljs css"><table width="100%" cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr>
+            <td style="font:12px/15px Arial, Helvetica, sans-serif;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br><br>
+                Quos repudiandae dolore nemo optio, animi consequatur, <br><br>
+                necessitatibus a inventore beatae rerum quae rem <br><br>
+                illum corporis voluptas, impedit error! Sunt, soluta. Iusto!
+            </td>
+        </tr>
+    </tbody>
+</table>
+</code></pre>
+                </section>
+
+                <section>
+                	<h2>Examples</h2>
+                </section>
+
+                <section class="top-style">
+                	<img class="medium" src="img/img03.png" alt="">
+                </section>
+
+                <section class="top-style">
+                    <img class="medium" src="img/img04.png" alt="">
+                </section>
+
+                <section>
+                    <h2>Email templates for mobile</h2>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Mail clients</h3>
+                        <ul class="style-list-01">
+                            <li>iOS 9</li>
+                            <li>Android 4.2</li>
+                            <li>Android 2.3</li>
+                            <li>Gmail App</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Mail clients</h3>
+                        <img src="img/img05.png" alt="">
+                    </section>
+                </section>
+
+                <section>
+                	<h3>Reset</h3>
+ <pre><code class="hljs css">* {
+    -webkit-text-size-adjust: none;
+    -webkit-text-resize: 100%;
+    text-resize: 100%;
+}
+</code></pre>
+                </section>
+
+                <section>
+                	<h2>Responsive emails</h2>
+                </section>
+
+                <section>
+                    <h3>Should work on mobile</h3>
+                    <h3>Should NOT break desktop</h3>
+                </section>  
+
+                <section>
+<pre><code class="hljs css"><style type="text/css">
+* {
+    -webkit-text-size-adjust: none;
+    -webkit-text-resize: 100%;
+    text-resize: 100%;
+}
+@media only screen and (max-width:500px) {
+    table[class="wrapper"]{min-width:320px !important;}
+    table[class="flexible"]{width:100% !important;}
+    td[class="hide"],
+    td[class="hide"] img,
+    span[class="hide"],
+    br[class="hide"]{
+        display:none !important;
+        width:0 !important;
+        height:0 !important;
+        padding:0 !important;
+        font-size:0 !important;
+        line-height:0 !important;
+    }
+    td[class="img-flex"] img{
+        width:100% !important;
+        height:auto !important;
+    }
+    td[class="text-center"]{text-align:center !important;}
+}
+</style>
+</code></pre>
+                </section>
+                <section>
+                	<h2>Example</h2>
+                </section>
+                <section class="top-style">
+                    <img src="img/img06.gif" alt="">
+                    <div class="fragment">
+                        <img style="margin-top: 0;" src="img/img07.gif" alt="">
+                    </div>
+                </section>
+                <section>
+<pre class="style"><code class="hljs css"><table class="flexible" width="192" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
+</table>
+<table class="flexible" align="right" width="396" cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr>
+            <td>
+                <table class="flexible" width="192" align="left" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                    
+                </table>
+                <table class="flexible" width="192" align="right" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</code></pre>
+                </section>
+
+                <section>
+<pre class="style"><code class="hljs css"><style type="text/css">
+* {
+    -webkit-text-size-adjust: none;
+    -webkit-text-resize: 100%;
+    text-resize: 100%;
+}
+@media only screen and (max-width:500px) {
+    table[class="flexible"]{width:100% !important;}
+    td[class="img-flex"] img{
+        width:100% !important;
+        max-width:192px !important;
+        height:auto !important;
+    }
+}
+</style>
+</code></pre> 	
+                </section>
+
+                <section>
+                    <img src="img/img08.gif" alt="">
+                    <div class="fragment">
+                        <img style="margin-top: 0;" src="img/img09.gif" alt="">
+                    </div>
+                </section>
+
+                <section>
+<pre class="style"><code class="hljs css"><table>
+    <tbody>
+        <tr>
+            <td>
+                <table class="flexible" width="100" align="right" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table align="center" style="margin:0 auto !important;" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td style="padding:0 0 10px;">
+                                                <a href="#"><img src="img-placeholder.gif" border="0" style="vertical-align:top;" width="100" height="100" alt="" /></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="flexible" width="480" align="right" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td style="font:12px/16px Arial, Helvetica, sans-serif; color:#000;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</code></pre>	
+                </section>
+
+                <section>
+<pre class="style"><code class="hljs css">@media only screen and (max-width:500px) {
+    table[class="flexible"]{width:100% !important;}
+}
+</style>
+</code></pre>   
+                </section>
+                <section>
+                	<h2>Email marketing services</h2>
+                </section>
+                <section>
+                	<h3 class="fragment">Mailchimp</h3>
+                    <h3 class="fragment">Campaign monitor</h3>
+                    <h3 class="fragment">constant conact</h3>
+                    <h3 class="fragment">icontact</h3>
+                </section>
+                <section>
+                	<h3>Mailchimp</h3>
+                </section>
+                <section>
+                	<ul class="style-list">
+                        <li>Mail templates + editor</li>
+                        <li>Mailing lists</li>
+                        <li>Statistics</li>
+                        <li>Real time values in email</li>
+                        <li>Custom Autoresponders</li>
+                        <li>Google Analytics</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Edit tags</h3>
+                    <ul>
+                        <li><b>mc:repeatable=""</b> - repeat content</li>
+                        <li><b>mc:edit=""</b> - edit text or image</li>
+                        <li><b>mc:variant=""</b> - variants of repeatable blocks</li>
+                        <li><b>mc:hideable</b> - hide block</li>
+                        <li><b>mc:allowtext</b> - use for varant usage (show image or text)</li>
+                        <li><b>mc:allowdesigner</b> - edit images and bg</li>
+                    </ul>
+                </section>
+                <section>
+<pre class="style"><code class="hljs css"><table mc:repeatable="block">
+    <tbody>
+        <tr>
+            <td>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</code></pre> 
+        <img class="fragment" src="img/img10.jpg" alt="">
+                </section>
+                
+                <section>
+<pre class="style"><code class="hljs css"><table mc:repeatable="block">
+    <tbody>
+        <tr>
+            <td mc:edit="heading" style="font:12px/15px Arial, Helvetica, sans-serif;">HEADER</td>
+            <td mc:edit="content" style="font:12px/15px Arial, Helvetica, sans-serif;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br><br>
+                Quos repudiandae dolore nemo optio, animi consequatur, <br><br>
+                necessitatibus a inventore beatae rerum quae rem <br><br>
+                illum corporis voluptas, impedit error! Sunt, soluta. Iusto!
+            </td>
+        </tr>
+    </tbody>
+</table>
+</code></pre>
+    <img class="fragment" src="img/img11.jpg" alt="">
+                </section>
+
+                <section class="top-style">
+<pre class="style"><code class="hljs css"><table mc:repeatable="product" mc:variant="content with left image">
+    <tbody>
+        <tr></tr>
+    </tbody>
+</table>
+<table mc:repeatable="product" mc:variant="content with right image">
+    <tbody>
+        <tr></tr>
+    </tbody>
+</table>
+</code></pre>    
+
+                <img class="fragment" src="img/img12.jpg" alt="">
+                </section>
+
+                <section>
+                    <h3>Merge tags</h3>
+                    <ul>
+                        <li><b>*|ARCHIVE|*</b> - creates the URL to your campaign</li>
+                        <li><b>*|DATE:|*</b> - shows the current date</li>
+                        <li><b>*|FNAME|*</b> - inserts your subscriber's first name</li>
+                        <li><b>*|LNAME|*</b> - inserts your subscriber's last name</li>
+                        <li><b>*|EMAIL|*</b> - inserts your subscriber's email</li>
+                        <li><b>*|MC:SUBJECT|*</b> - displays the campaign's subject</li>
+                    </ul>
+                    <a href="http://kb.mailchimp.com/merge-tags/all-the-merge-tags-cheat-sheet">See more</a>
+                </section>
+
+                <section>
+                    <h2>How to check yourself</h2>
+                    <ol>
+                        <li>Outlook 2013</li>
+                        <li>Attach File</li>
+                        <li>Select Insert as text on attach button</li>
+                    </ol>
+                    <img src="img/img13.jpg" alt="">
+                </section>
+
+                <section>
+                    <h1>The end.</h1>
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: 'simple', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
